@@ -1,4 +1,119 @@
-body{
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
   background-image: linear-gradient(rgb(240, 240, 240), rgb(248, 242, 242),rgb(248, 220, 224), rgb(255, 172, 186));
   height: 100vh;
+  max-height: 100%;
+  width: 100vw;
+  max-width: 100%;
+}
+
+header {
+  /* visibility: hidden; */
+  font-weight: bold;
+  top: 0;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.menu-btn {
+  display: flex;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  margin: 0 10px;
+}
+
+ul {
+  list-style: none;
+}
+
+input[type="checkbox"]{
+  opacity:0;
+  position: absolute;
+  z-index: 2;
+  width: 50px;
+  height: 50px;
+}
+
+.burgermenu {
+  width: 50px;
+}
+
+.burgermenu:before,
+.burgermenu:after,
+.burgermenu div {
+  background: rgb(0, 0, 0);
+  content: "";
+  display: block;
+  height: 6px;
+  border-radius: 3px;
+  margin: 7px 0;
+  transition: 0.5s;
+}
+
+input[type="checkbox"]:checked ~.burgermenu:before {
+  transform: translateY(12px) rotate(135deg);
+}
+input[type="checkbox"]:checked ~.burgermenu:after {
+  transform: translateY(-12px) rotate(-135deg);
+}
+input[type="checkbox"]:checked ~.burgermenu div {
+  transform: scale(0);
+} 
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+}
+
+.hidden {
+  display: none;
+}
+
+.goodreading {
+  width: 80vw;
+  opacity: 0;
+}
+
+.goodreadingReveal {
+  transition: opacity 1s;
+  opacity: 1;
+}
+
+.goodreadingHide {
+  transition: opacity 1s;
+  opacity: 0;
+}
+
+.smile {
+  width: 25vw;
+  opacity: 0;
+}
+
+.smileReveal {
+  transition: opacity 1s;
+  opacity: 1;
+}
+
+.smileHide {
+  transition: opacity 1s;
+  opacity: 0;
+}
+
+.areyou {
+  width: 55vw;
+  opacity: 0;
+}
+
+.areyouReveal {
+  transition: opacity 1s;
+  opacity: 1;
 }
