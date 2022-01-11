@@ -18,6 +18,54 @@ header {
   top: 0;
   display: flex;
   justify-content: flex-end;
+
+  /* position: absolute; */
+}
+
+nav{
+  z-index: 5;
+  margin-top: 1rem;  
+  margin-right: 1rem;
+  display: flex;
+  flex-direction: column;
+  width: 50vw;
+  align-items: flex-end;
+}
+
+
+
+.overlay{
+  position:absolute;
+  width: 100vw;
+  height: 100vh;
+  z-index: 3;
+  backdrop-filter: blur(5px);
+  background-color: rgba(92, 92, 92, 0.233);
+  transition: width 1s;
+}
+
+
+
+.mobileMenuOverlay{
+  position: absolute;
+  right: 0px;
+  background-color: rgb(255, 255, 255);
+  z-index: 4;
+  height: 100vh;
+  width: 0;
+  transition: width 1s;
+}
+
+.mmOverlayWdith{
+  width: 50vw;
+  /* transition: width 1s; */
+}
+
+#eye{
+  position: absolute;
+  z-index: -3;
+  bottom: 0;
+  width: 100vw;
 }
 
 .menu-btn {
@@ -44,6 +92,7 @@ input[type="checkbox"]{
 
 .burgermenu {
   width: 50px;
+  margin-bottom: 2rem;
 }
 
 .burgermenu:before,
@@ -102,6 +151,10 @@ main {
 .homeBtn, .aboutBtn {
   background-color: transparent;
   border: none;
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  margin-right: 2rem;
+  font-weight: bold;
 }
 
 .homeTop {
@@ -114,7 +167,6 @@ main {
   margin-top: 5vh;
   height: 25vh;
   display:flex;
-  flex-direction: column;
 }
 
 .hidden {
@@ -157,28 +209,32 @@ main {
   border-radius: 2px;
   border-width: 1px;
   width: 8rem;
-  height: 2rem;
+  height: 3rem;
   font-size: 1.5rem;
   transition: box-shadow 0.1s ease-in;
   opacity: 0;
+  margin-top: 4px;
+  /* margin-left: 1px; */
 }
 
 .no:hover, .yes:hover {
   box-shadow: 2px 2px 3px 1px rgba(0, 0, 0, 0.5);
-  transition: box-shadow 0.1s ease-out;
+  transition: box-shadow 0.05s ease-out;
+  margin-top: 2px;
+  margin-left: 0;
 }
 
 .no:active {
-  background-color: red;
-  margin-top: 2px;
-  margin-left: 2px;
+  background-color: #9C0002;
+  margin-top: 6px;
+  margin-left: 4px;
   box-shadow: none;
 }
 
 .yes:active {
-  background-color: rgb(214, 187, 187);
-  margin-top: 2px;
-  margin-left: 2px;
+  background-color: #E5E7E2;
+  margin-top: 6px;
+  margin-left: 4px;
   box-shadow: none;
 }
 
@@ -206,24 +262,4 @@ main {
 .float {
   animation: bounce ease-in-out 2s;
   animation-iteration-count: infinite;
-}
-
-@keyframes bouncingShadow {
-  0%{opacity: 0}
-  20%{opacity: 0}
-  50%{opacity: 0.5}
-  80%{opacity: 0}
-  100%{opacity: 0;}
-}
-
-.shadow{
-  border: transparent;
-  height: 1px;
-  border-radius: 50%;
-  box-shadow: 2px 6px 3px 2px rgba(0, 0, 0, 0.3);
-  margin-top:5px;
-  width: 90%;
-  /* animation: bouncingShadow ease-in 2s;
-  animation-iteration-count: infinite; */
-  opacity: 0;
 }

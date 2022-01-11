@@ -1,5 +1,20 @@
 // "OH, GOOD READING TO YOU,"
 
+document.getElementById('menuToggle').addEventListener('change', function(){
+  if(this.checked){
+    document.getElementById('overlay').classList.remove('hidden')
+    document.getElementById('overlay').classList.add('overlayActive')
+    document.getElementById('menuOverlay').classList.add('mmOverlayWdith')
+  }else{
+    document.getElementById('overlay').classList.remove('overlayActive')
+    document.getElementById('menuOverlay').classList.remove('mmOverlayWdith')
+    setTimeout(function(){
+      document.getElementById('overlay').classList.add('hidden')
+    },900)
+    
+  }
+})
+
 setTimeout(function(){
   document.getElementById("goodreading").classList.remove("hidden");
 },900);
@@ -42,18 +57,20 @@ setTimeout(function(){
 
 setTimeout(function(){
   document.querySelector(".no").classList.remove("hidden");
+  document.querySelector(".yes").classList.remove("hidden");
 }, 8900);
 setTimeout(function(){
   document.querySelector(".no").classList.add("fastReveal");
+  document.querySelector(".yes").classList.add("fastReveal");
 }, 9000);
 
-setTimeout(function(){
-  document.querySelector(".yes").classList.remove("hidden");
-}, 9900);
+// setTimeout(function(){
+//   document.querySelector(".yes").classList.remove("hidden");
+// }, 9900);
 
-setTimeout(function(){
-  document.querySelector(".yes").classList.add("fastReveal");
-}, 10000);
+// setTimeout(function(){
+//   document.querySelector(".yes").classList.add("fastReveal");
+// }, 10000);
 
 document.querySelector(".homeBtn").addEventListener("click", function(){
   document.querySelector(".home").classList.remove("hidden");

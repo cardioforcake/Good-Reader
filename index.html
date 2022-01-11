@@ -9,9 +9,12 @@
   <title>Good Reader</title>
 </head>
 <body>
+  <div class="overlay hidden" id="overlay"></div>
+  <div class="mobileMenuOverlay" id="menuOverlay"></div>
+  <img src="imgs/eye.svg" alt="backgroundobserver" id="eye"/>
   <header>
     <nav>
-      <input type="checkbox"/>
+      <input type="checkbox" id="menuToggle"/>
       <div class="burgermenu">
         <div></div>
       </div>
@@ -32,12 +35,9 @@
   <main>
     <div class="home">
       <div class="homeTop">
-        <img src="imgs/goodreading.svg" alt="greeting" id="goodreading" class="goodreading hidden"/>
-        <img src="imgs/smile.svg" alt="second-greeting" id="smile" class="smile hidden"/>
-        <div  id="areyou" class="questionContainer hidden">
-          <img src="imgs/areyou.svg" alt="question" class="areyou float"/>
-          <div class="shadow"></div>
-        </div>
+        <img src="imgs/goodreading.svg" alt="greeting" id="goodreading" class="goodreading float hidden"/>
+        <img src="imgs/smile.svg" alt="second-greeting" id="smile" class="smile float hidden"/>
+        <img src="imgs/areyou.svg" alt="question" id="areyou" class="areyou float hidden"/>
       </div>
       <div class="homeBottom">
         <div class="btnContainer">
