@@ -37,7 +37,7 @@ nav{
 .overlay{
   position:absolute;
   width: 100vw;
-  height: 100vh;
+  height: 100%;
   z-index: 3;
   backdrop-filter: blur(5px);
   background-color: rgba(92, 92, 92, 0.233);
@@ -51,7 +51,7 @@ nav{
   right: 0px;
   background-color: rgb(255, 255, 255);
   z-index: 4;
-  height: 100vh;
+  height: 100%;
   width: 0;
   transition: width 1s;
 }
@@ -65,7 +65,7 @@ nav{
   position: absolute;
   z-index: -3;
   bottom: 0;
-  width: 100vw;
+  width: 100%;
 }
 
 .menu-btn {
@@ -126,7 +126,7 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 80vh;
+  height: 70vh;
 }
 
 .home {
