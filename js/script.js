@@ -73,11 +73,15 @@ setTimeout(function(){
 // }, 10000);
 
 document.querySelector(".homeBtn").addEventListener("click", function(){
+  document.querySelector(".homeBtn").classList.add("selectedNav")
+  document.querySelector(".aboutBtn").classList.remove("selectedNav")
   document.querySelector(".home").classList.remove("hidden");
   document.querySelector(".about").classList.add("hidden");
 });
 
 document.querySelector(".aboutBtn").addEventListener("click", function(){
+  document.querySelector(".homeBtn").classList.remove("selectedNav")
+  document.querySelector(".aboutBtn").classList.add("selectedNav")
   document.querySelector(".home").classList.add("hidden");
   document.querySelector(".about").classList.remove("hidden");
 });

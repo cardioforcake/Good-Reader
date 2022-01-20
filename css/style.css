@@ -113,7 +113,7 @@ input[type="checkbox"]{
 .burgermenu:before,
 .burgermenu:after,
 .burgermenu div {
-  background: rgb(209, 42, 42);
+  background: rgb(0, 0, 0);
   content: "";
   display: block;
   height: 6px;
@@ -145,6 +145,8 @@ main {
 }
 
 .home {
+  position: absolute;
+  top: 0; 
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -153,10 +155,13 @@ main {
 }
 
 .about {
+  position: absolute;
+  top: 0;
   height: 100%;
   width: 100%;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 #about {
@@ -165,11 +170,23 @@ main {
 
 .homeBtn, .aboutBtn {
   background-color: transparent;
-  border: none;
+  border: solid 5px;
+  border-top-color: transparent;
+  border-bottom-color: transparent;
+  border-right-color: transparent;
+  border-left-color: transparent;
   font-size: 1.5rem;
   margin-top: 1rem;
   margin-right: 2rem;
   font-weight: bold;
+  padding-left: 15px;
+}
+
+.selectedNav{
+
+  border-radius: 1px;
+
+  border-left-color: #9C0002;
 }
 
 .homeTop {
