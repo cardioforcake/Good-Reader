@@ -8,9 +8,9 @@ document.getElementById('menuToggle').addEventListener('change', function(){
   }else{
     document.getElementById('overlay').classList.remove('overlayActive')
     document.getElementById('menuOverlay').classList.remove('mmOverlayWdith')
-    setTimeout(function(){
+    // setTimeout(function(){
       document.getElementById('overlay').classList.add('hidden')
-    },900)
+    // },900)
     
   }
 })
