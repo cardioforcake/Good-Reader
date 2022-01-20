@@ -211,7 +211,7 @@ main {
 }
 
 .smile {
-  width: 25vw;
+  width: 16vw;
   opacity: 0;
 }
 
@@ -224,7 +224,7 @@ main {
 }
 
 .areyou {
-  width: 55vw;
+  width: 85vw;
 }
 .btnContainer {
   margin: 0.5rem 0.5rem;
