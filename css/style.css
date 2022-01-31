@@ -193,17 +193,17 @@ main {
 
 .homeBtn, .aboutBtn {
   background-color: transparent;
-  border: solid 5px;
+  border: solid 0.5rem;
   border-top-color: transparent;
   border-bottom-color: transparent;
   border-right-color: transparent;
   border-left-color: transparent;
-  font-size: 1.5rem;
+  font-size: 2rem;
   /* margin-top: 3rem; */
   /* margin-right: 5rem; */
   font-weight: bold;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
 }
 
 .selectedNav{
