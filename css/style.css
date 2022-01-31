@@ -28,15 +28,22 @@ header {
   /* position: absolute; */
 }
 
-nav{
+.nav{
   z-index: 5;
+}
+
+.mobileNav{
   margin-top: 1rem;  
   margin-right: 1rem;
   display: flex;
   flex-direction: column;
-  width: 100vw;
   align-items: flex-end;
+  width: 100vw;
 }
+
+/* .navD{
+  z-index: 5;
+} */
 
 
 
