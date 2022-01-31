@@ -160,12 +160,12 @@ input[type="checkbox"]{
 }
 
 input[type="checkbox"]:checked ~.burgermenu:before {
-  transform: translateY(13px) rotate(135deg);
-  width: 35px;
+  transform: translateY(13.5px) rotate(135deg);
+  width: 35.5px;
 }
 input[type="checkbox"]:checked ~.burgermenu:after {
   transform: translateY(-12px) rotate(-135deg);
-  width: 35px;
+  width: 36px;
 }
 input[type="checkbox"]:checked ~.burgermenu div {
   transform: scale(0);
