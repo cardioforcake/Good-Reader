@@ -62,6 +62,8 @@ setTimeout(function(){
 setTimeout(function(){
   document.querySelector(".no").classList.add("fastReveal");
   document.querySelector(".yes").classList.add("fastReveal");
+  document.querySelector(".burgermenu").classList.remove("hidden")
+  document.querySelector(".menuToggle").classList.remove("hidden")
   document.querySelector(".navList").classList.remove("hidden")
 }, 9000);
 
