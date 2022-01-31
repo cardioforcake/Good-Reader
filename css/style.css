@@ -188,7 +188,7 @@ main {
 }
 
 #about {
-  height: 80vh;
+  width: 90vw;
 }
 
 .homeBtn, .aboutBtn {
