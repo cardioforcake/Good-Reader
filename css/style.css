@@ -225,7 +225,7 @@ main {
   padding-right: 1.5rem;
 }
 
-.navDBtn {
+.homeBtnD, .aboutBtnD {
   background-color: transparent;
   border: solid 0.2rem;
   border-top-color: transparent;
