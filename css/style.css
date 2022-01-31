@@ -34,7 +34,6 @@ nav{
 
 .mobileNav{
   margin-top: 1rem;  
-  margin-right: 1rem;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
