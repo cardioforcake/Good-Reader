@@ -34,7 +34,7 @@ nav{
   margin-right: 1rem;
   display: flex;
   flex-direction: column;
-  width: 50vw;
+  width: 100vw;
   align-items: flex-end;
 }
 
@@ -59,11 +59,11 @@ nav{
   z-index: 4;
   height: 100%;
   width: 0;
-  transition: width 0.35s;
+  /* transition: width 0.35s; */
 }
 
 .mmOverlayWdith{
-  width: 50vw;
+  width: 100vw;
   /* transition: width 1s; */
 }
 #eyeContainer{
@@ -81,6 +81,7 @@ nav{
   z-index: -3;
   bottom: 0; */
   width: 100%;
+  /* margin-bottom: -35rem; */
 }
 
 .menu-btn {
@@ -95,6 +96,19 @@ nav{
 .navList {
   list-style: none;
   opacity: 0;
+  width: 100%;
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.navList > li{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
 }
 
 input[type="checkbox"]{
@@ -106,7 +120,7 @@ input[type="checkbox"]{
 }
 
 .burgermenu {
-  width: 50px;
+  width: 45px;
   margin-bottom: 2rem;
 }
 
@@ -116,17 +130,19 @@ input[type="checkbox"]{
   background: rgb(0, 0, 0);
   content: "";
   display: block;
-  height: 6px;
-  border-radius: 3px;
-  margin: 7px 0;
+  height: 5px;
+  border-radius: 5px;
+  margin: 8px 0;
   transition: 0.5s;
 }
 
 input[type="checkbox"]:checked ~.burgermenu:before {
-  transform: translateY(12px) rotate(135deg);
+  transform: translateY(13px) rotate(135deg);
+  /* width: 42px; */
 }
 input[type="checkbox"]:checked ~.burgermenu:after {
   transform: translateY(-12px) rotate(-135deg);
+  /* width: 42px; */
 }
 input[type="checkbox"]:checked ~.burgermenu div {
   transform: scale(0);
@@ -138,10 +154,15 @@ input[type="checkbox"]:checked ~.navList {
 } 
 
 main {
+  z-index: 2;
+  position: absolute;
+  top: 0;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 70vh;
+  height: 100vh;
+  width: 100vw;
 }
 
 .home {
@@ -149,7 +170,7 @@ main {
   top: 0; 
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   height: 100%;
 }
@@ -176,10 +197,11 @@ main {
   border-right-color: transparent;
   border-left-color: transparent;
   font-size: 1.5rem;
-  margin-top: 1rem;
-  margin-right: 2rem;
+  /* margin-top: 3rem; */
+  /* margin-right: 5rem; */
   font-weight: bold;
   padding-left: 15px;
+  padding-right: 15px;
 }
 
 .selectedNav{
@@ -190,7 +212,7 @@ main {
 }
 
 .homeTop {
-  height: 20vh;
+  height: 45vh;
   display: flex;
   align-items: flex-end;
 }
@@ -206,7 +228,7 @@ main {
 }
 
 .goodreading {
-  width: 80vw;
+  width: 75vw;
   opacity: 0;
 }
 
@@ -224,7 +246,7 @@ main {
 }
 
 .areyou {
-  width: 85vw;
+  width: 80vw;
 }
 .btnContainer {
   margin: 0.5rem 0.5rem;
