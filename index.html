@@ -12,7 +12,20 @@
   <div class="overlay hidden" id="overlay"></div>
   <div class="mobileMenuOverlay" id="menuOverlay"></div>
   <header>
-    <nav>
+    <nav class="navD hidden">
+      <ul class="navListD hidden">
+        <li>
+          <button class="homeBtn selectedNav navDBtn">
+            Home
+          </button>
+        </li>
+        <li>
+          <button class="aboutBtn navDBtn">
+            About
+          </button>
+        </li>
+    </nav>
+    <nav class="navM">
       <input type="checkbox" id="menuToggle"/>
       <div class="burgermenu">
         <div></div>
@@ -33,15 +46,15 @@
   </header>
   <main>
     <div class="home">
-      <div class="homeTop">
+      <div class="homeTopM">
         <img src="imgs/goodreadingm.svg" alt="greeting" id="goodreading" class="goodreading float hidden"/>
         <img src="imgs/smilem.svg" alt="second-greeting" id="smile" class="smile float hidden"/>
         <img src="imgs/areyoum.svg" alt="question" id="areyou" class="areyou float hidden"/>
       </div>
-      <div class="homeTopM hidden">
-        <img src="imgs/goodreadingd.svg" alt="greeting" id="goodreading" class="goodreading float hidden"/>
-        <img src="imgs/smiled.svg" alt="second-greeting" id="smile" class="smile float hidden"/>
-        <img src="imgs/areyoud.svg" alt="question" id="areyou" class="areyou float hidden"/>
+      <div class="homeTopD hidden">
+        <img src="imgs/goodreadingd.svg" alt="greeting" id="goodreadingd" class="goodreading float hidden"/>
+        <img src="imgs/smiled.svg" alt="second-greeting" id="smiled" class="smile float hidden"/>
+        <img src="imgs/areyoud.svg" alt="question" id="areyoud" class="areyou float hidden"/>
       </div>
       <div class="homeBottom">
         <div class="btnContainer">
@@ -61,8 +74,8 @@
     </div>
   </main>
   <div id="eyeContainer">
-    <img src="imgs/eyem.svg" alt="backgroundobserver" id="eye"/>
-    <img src="imgs/eyem.svg" alt="backgroundobserver" id="eye" class="hidden"/> 
+    <img src="imgs/eyem.svg" alt="backgroundobserver" id="eyeM"/>
+    <img src="imgs/eyed.svg" alt="backgroundobserver" id="eyeD" class="hidden"/> 
   </div>
 
 </body>

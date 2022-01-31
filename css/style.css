@@ -74,15 +74,21 @@ nav{
   width: 100vw;
   display: flex;
   align-items: flex-end;
+  justify-content: center;
 }
 
-#eye{
+#eyeM{
   /* position: relative;
   z-index: -3;
   bottom: 0; */
   width: 100%;
   /* margin-bottom: -35rem; */
 }
+
+#eyeD{
+  width: 75%;
+}
+
 
 .menu-btn {
   display: flex;
@@ -109,7 +115,19 @@ nav{
   display: flex;
   justify-content: center;
   margin-bottom: 2rem;
+}
 
+.navListD{
+  list-style: none;
+  position: absolute;
+  left: 4rem;
+  top: 4rem;
+}
+.navListD > li{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0.3rem;
 }
 
 input[type="checkbox"]{
@@ -174,6 +192,7 @@ main {
   justify-content: center;
   align-items: center;
   height: 100%;
+  width: 100%;
   padding-bottom: 10rem;
 }
 
@@ -206,6 +225,18 @@ main {
   padding-right: 1.5rem;
 }
 
+.navDBtn {
+  background-color: transparent;
+  border: solid 0.2rem;
+  border-top-color: transparent;
+  border-bottom-color: transparent;
+  border-right-color: transparent;
+  border-left-color: transparent;
+  font-size: 1.2rem;
+  padding-left: 0.8rem;
+  font-weight: normal;
+}
+
 .selectedNav{
 
   border-radius: 1px;
@@ -213,9 +244,13 @@ main {
   border-left-color: #9C0002;
 }
 
-.homeTop {
+.homeTopM  {
   height: 45vh;
   display: flex;
+  align-items: flex-end;
+}
+.homeTopD{
+  height: 20vh;
   align-items: flex-end;
 }
 
@@ -318,4 +353,35 @@ main {
 .float {
   animation: bounce ease-in-out 2s;
   animation-iteration-count: infinite;
+}
+
+@media (min-aspect-ratio: 1/1){
+  #about{
+    height: 80vh;
+  }
+  .navM{
+    display: none;
+  }
+  .navD{
+    display: block;
+  }
+  #eyeM{
+    display: none;
+  }
+  #eyeD{
+    display: flex;
+  }
+  .homeTopD{
+    display: flex;
+  }
+  .homeTopM{
+    display: none;
+  }
+  .home{
+    padding-bottom: 0;
+    padding-top: 4rem;
+  }
+  .btnContainer{
+    width: 10rem;
+  }
 }

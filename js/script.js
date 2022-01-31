@@ -64,6 +64,58 @@ setTimeout(function(){
   document.querySelector(".yes").classList.add("fastReveal");
 }, 9000);
 
+// DESTOP VERSION
+
+setTimeout(function(){
+  document.getElementById("goodreadingd").classList.remove("hidden");
+},900);
+setTimeout(function(){
+  document.getElementById("goodreadingd").classList.add("reveal");
+},1000);
+
+setTimeout(function(){
+  document.getElementById("goodreadingd").classList.add("hide");
+},3000);
+setTimeout(function(){
+  document.getElementById("goodreadingd").classList.add("hidden");
+},4000);
+
+// "OH, SMILE"
+
+setTimeout(function(){
+  document.getElementById("smiled").classList.remove("hidden");
+},4400);
+setTimeout(function(){
+  document.getElementById("smiled").classList.add("reveal");
+},4500);
+
+setTimeout(function(){
+  document.getElementById("smiled").classList.add("hide");
+},6500);
+setTimeout(function(){
+  document.getElementById("smiled").classList.add("hidden");
+},7500);
+
+// "ARE YOU A GOOD READER?"
+
+setTimeout(function(){
+  document.getElementById("areyoud").classList.remove("hidden");
+}, 7900);
+
+setTimeout(function(){
+  document.getElementById("areyoud").classList.add("reveal");
+}, 8000);
+
+setTimeout(function(){
+  document.querySelector(".no").classList.remove("hidden");
+  document.querySelector(".yes").classList.remove("hidden");
+}, 8900);
+setTimeout(function(){
+  document.querySelector(".no").classList.add("fastReveal");
+  document.querySelector(".yes").classList.add("fastReveal");
+  document.querySelector(".navListD").classList.remove("hidden")
+}, 9000);
+
 // setTimeout(function(){
 //   document.querySelector(".yes").classList.remove("hidden");
 // }, 9900);
