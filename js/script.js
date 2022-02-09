@@ -1,3 +1,26 @@
+const yesList = [
+  "https://www.alternet.org/",
+  "https://abcnews.go.com/",
+  "https://apnews.com/",
+  "https://www.bloomberg.com/",
+  "https://www.buzzfeednews.com/",
+  "https://www.cbsnews.com/",
+  "https://www.cnn.com/",
+  "https://www.thedailybeast.com/",
+  "https://www.democracynow.org/",
+  "https://www.forbes.com/",
+  "https://www.foxnews.com/",
+  "https://www.nytimes.com/",
+  "https://www.reuters.com/",
+  "https://www.usatoday.com/",
+  "https://www.economist.com/",
+]
+
+document.querySelector(".yes").addEventListener('click', function(){
+  let rand = Math.floor(Math.random()*yesList.length)
+  window.open(`${yesList[rand]}`,'_blank')
+})
+
 // "OH, GOOD READING TO YOU,"
 
 document.getElementById('menuToggle').addEventListener('change', function(){
