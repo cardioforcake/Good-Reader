@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300;500&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
   <script defer src="./js/script.js"></script>
   <title>Good Reader</title>
 </head>
@@ -53,6 +53,27 @@
     </nav>
   </header>
   <main>
+    <div class="purchasePage hidden">
+      <div class="closeTrigger"></div>
+      <div class="purchaseModal">
+        <div class="closeModal">
+            <img src="imgs/x.svg" id="closeModal"/>
+        </div>
+        <div class="coverContainer center">
+          <img src="imgs/cover.svg" alt="bookcover" id="cover"/>
+        </div>
+        <div class="purchaseDesc center">
+          <hr />
+          <p>Purchase On</p>
+        </div>
+        <div class="purchaseLinks center">
+          <button class="purchaseBtn">Kindle</button>
+          <button class="purchaseBtn">Nook</button>
+          <button class="purchaseBtn">iBooks</button>
+        </div>
+
+      </div>
+    </div>
     <div class="home">
       <div class="homeTopM">
         <img src="imgs/goodreadingm.svg" alt="greeting" id="goodreading" class="goodreading float hidden"/>

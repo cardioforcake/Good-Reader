@@ -16,9 +16,29 @@ const yesList = [
   "https://www.economist.com/",
 ]
 
-document.querySelector(".yes").addEventListener('click', function(){
+document.querySelector('.yes').addEventListener('click', function(){
   let rand = Math.floor(Math.random()*yesList.length)
   window.open(`${yesList[rand]}`,'_blank')
+})
+
+document.querySelector('.no').addEventListener('click', function(){
+  document.querySelector('.purchasePage').classList.remove('hidden')
+})
+
+document.querySelector('.closeModal').addEventListener('click', function(){
+  document.querySelector('.purchasePage').classList.add('hidden')
+})
+
+
+// window.onclick= function(event){
+//   if(!event.target.classList.contains('purchaseModal') ){
+//     document.querySelector('.purchasePage').classList.add('hidden')
+//   }
+// }
+document.querySelector('.closeTrigger').addEventListener('click', function(event){
+  if(!event.target.classList.contains('hidden')){
+    document.querySelector('.purchasePage').classList.add('hidden')
+  }
 })
 
 // "OH, GOOD READING TO YOU,"
