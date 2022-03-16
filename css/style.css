@@ -34,9 +34,9 @@ header {
   /* position: absolute; */
 }
 
-nav{
+/* nav{
   z-index: 5;
-}
+} */
 
 .mobileNav{
   /* margin-top: 1rem;   */
@@ -117,6 +117,7 @@ nav{
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  z-index: 5;
 }
 
 .navList > li{
@@ -130,6 +131,7 @@ nav{
   list-style: none;
   position: absolute;
   top: 4rem;
+  z-index: 5;
 }
 .navListD > li{
   width: 100%;
@@ -141,18 +143,20 @@ nav{
 input[type="checkbox"]{
   opacity:0;
   position: absolute;
-  z-index: 2;
+  z-index: 5;
   width: 50px;
   height: 50px;
   margin-right: 1rem;
   margin-top: 1rem;
 }
 
+
 .burgermenu {
   width: 40px;
   margin-bottom: 2rem;
   margin-right: 1rem;
   margin-top: 1rem;
+  z-index: 4;
 }
 
 .burgermenu:before,
@@ -217,10 +221,20 @@ main {
   background-color: transparent;
 }
 
-.purchaseModal{
+.purchaseModalD{
   z-index: 8;
-  width: 60vw;
-  height: 80vh;
+  width: 35vw;
+  height: 86vh;
+  display: none;
+  background-color: #71968A;
+  position: relative;
+  font-family: 'Space Mono', monospace;
+}
+
+.purchaseModalM{
+  z-index: 8;
+  width: 100vw;
+  height: 100vh;
   background-color: #71968A;
   position: relative;
   display: flex;
@@ -230,14 +244,23 @@ main {
   font-family: 'Space Mono', monospace;
 }
 
-.closeModal{
+.closeModalM{
   position: absolute;
-  height: 6%;
+  height: 10%;
+  /* width: 5vw; */
+  top: 1%;
+  right: 2%;
+  z-index: 9;
+}
+
+.closeModalD{
+  position: absolute;
+  height: 5%;
   top: 1%;
   right: 2%;
 }
 
-#closeModal{
+#closeModalM, #closeModalD{
   height: 100%;
 }
 
@@ -248,14 +271,15 @@ main {
 .coverContainer{
   height: 50%;
   width: 80%;
+  padding-top: 10%;
 }
 
 #cover{
-  height: 90%
+  height: 85%
 }
 
 .purchaseDesc{
-  height: 12%;
+  height: 10%;
   width: 80%;
   flex-direction: column;
   color: white;
@@ -277,18 +301,18 @@ hr{
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  margin-bottom: 7%;
+  margin-bottom: 22%;
   max-height: 50%;
 }
 
 .purchaseBtn{
   font-family: 'Space Mono', monospace;
-  font-size: 3vh;
+  font-size: 2.5vh;
   font-weight: 600;
   width: 50%;
   margin-top: 3%;
-  padding-top: 1%;
-  padding-bottom: 1%;
+  padding-top: 0.75%;
+  padding-bottom: 0.75%;
 }
 
 .home {
@@ -490,6 +514,11 @@ hr{
   .overlay{
     width: 85vw;
   }
+
+  nav{
+    z-index: 5;
+  }
+
   .navM{
     display: none;
   }
@@ -499,7 +528,6 @@ hr{
     position: absolute;
     left: 0;
     justify-content: center;
-
   }
   #eyeM{
     display: none;
@@ -535,18 +563,35 @@ hr{
     box-shadow: none;
   }
 
-  .purchaseModal{
-    width: 35vw;
-    height: 86vh;
+  
+  #cover{
+    height: 90%
   }
 
   .coverContainer{
     height: 70%;
+    padding-top: 0;
+  }
+
+  .purchaseDesc{
+    height: 13%;
+  }
+
+  .purchaseModalM{
+    display: none;
+  }
+
+  .purchaseModalD{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
   }
 
   .purchaseLinks{
     flex-direction: row;
-    /* height: 8%; */
+    height: 8%;
+    margin-bottom: 7%;
   }
 
   .purchaseBtn{

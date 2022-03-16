@@ -23,21 +23,36 @@ document.querySelector('.yes').addEventListener('click', function(){
 
 document.querySelector('.no').addEventListener('click', function(){
   document.querySelector('.purchasePage').classList.remove('hidden')
+  document.querySelector('#menuToggle').classList.add('hidden')
+  document.querySelector('.burgermenu').classList.add('hidden')
 })
 
-document.querySelector('.closeModal').addEventListener('click', function(){
+document.querySelector('.closeModalM').addEventListener('click', function(){
   document.querySelector('.purchasePage').classList.add('hidden')
+  document.querySelector('#menuToggle').classList.remove('hidden')
+  document.querySelector('.burgermenu').classList.remove('hidden')
+})
+
+document.querySelector('.closeModalD').addEventListener('click', function(){
+  document.querySelector('.purchasePage').classList.add('hidden')
+  document.querySelector('#menuToggle').classList.remove('hidden')
+  document.querySelector('.burgermenu').classList.remove('hidden')
 })
 
 
-// window.onclick= function(event){
-//   if(!event.target.classList.contains('purchaseModal') ){
-//     document.querySelector('.purchasePage').classList.add('hidden')
-//   }
-// }
 document.querySelector('.closeTrigger').addEventListener('click', function(event){
   if(!event.target.classList.contains('hidden')){
     document.querySelector('.purchasePage').classList.add('hidden')
+    document.querySelector('#menuToggle').classList.remove('hidden')
+    document.querySelector('.burgermenu').classList.remove('hidden')
+  }
+})
+
+document.querySelector('.closeTrigger').addEventListener('click', function(event){
+  if(!event.target.classList.contains('hidden')){
+    document.querySelector('.purchasePage').classList.add('hidden')
+    document.querySelector('#menuToggle').classList.remove('hidden')
+    document.querySelector('.burgermenu').classList.remove('hidden')
   }
 })
 
@@ -48,11 +63,13 @@ document.getElementById('menuToggle').addEventListener('change', function(){
     document.getElementById('overlay').classList.remove('hidden')
     document.getElementById('overlay').classList.add('overlayActive')
     document.getElementById('menuOverlay').classList.add('mmOverlayWdith')
+    document.querySelector('.navList').classList.remove('hidden')
   }else{
     document.getElementById('overlay').classList.remove('overlayActive')
     document.getElementById('menuOverlay').classList.remove('mmOverlayWdith')
     // setTimeout(function(){
       document.getElementById('overlay').classList.add('hidden')
+      document.querySelector('.navList').classList.add('hidden')
     // },900)
     
   }
@@ -175,6 +192,7 @@ document.querySelector(".homeBtn").addEventListener("click", function(){
   document.querySelector(".aboutBtn").classList.remove("selectedNav")
   document.querySelector(".home").classList.remove("hidden");
   document.querySelector(".about").classList.add("hidden");
+  document.querySelector(".navList").classList.add("hidden");
   document.getElementById('overlay').classList.remove('overlayActive')
   document.getElementById('menuOverlay').classList.remove('mmOverlayWdith')
   document.getElementById('overlay').classList.add('hidden')
@@ -186,6 +204,7 @@ document.querySelector(".aboutBtn").addEventListener("click", function(){
   document.querySelector(".aboutBtn").classList.add("selectedNav")
   document.querySelector(".home").classList.add("hidden");
   document.querySelector(".about").classList.remove("hidden");
+  document.querySelector(".navList").classList.add("hidden");
   document.getElementById('overlay').classList.remove('overlayActive')
   document.getElementById('menuOverlay').classList.remove('mmOverlayWdith')
   document.getElementById('overlay').classList.add('hidden')
