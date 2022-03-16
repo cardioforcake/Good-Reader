@@ -246,7 +246,7 @@ main {
 
 .closeModalM{
   position: absolute;
-  height: 10%;
+  height: 7%;
   /* width: 5vw; */
   top: 1%;
   right: 2%;
@@ -271,11 +271,11 @@ main {
 .coverContainer{
   height: 50%;
   width: 80%;
-  padding-top: 10%;
+  /* padding-top: 10%; */
 }
 
 #cover{
-  height: 85%
+  height: 70%
 }
 
 .purchaseDesc{
