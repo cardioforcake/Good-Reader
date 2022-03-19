@@ -60,17 +60,21 @@ document.querySelector('.closeTrigger').addEventListener('click', function(event
 
 document.getElementById('menuToggle').addEventListener('change', function(){
   if(this.checked){
-    document.getElementById('overlay').classList.remove('hidden')
-    document.getElementById('overlay').classList.add('overlayActive')
-    document.getElementById('menuOverlay').classList.add('mmOverlayWdith')
-    document.querySelector('.navList').classList.remove('hidden')
+    setTimeout(function(){
+    // document.getElementById('overlay').classList.remove('hidden')
+    // document.getElementById('overlay').classList.add('overlayActive')
+    // document.getElementById('menuOverlay').classList.add('mmOverlayWdith')
+      document.getElementById('menuOverlay').classList.remove('hidden')
+      document.querySelector('.navList').classList.remove('hidden')
+    },150)
   }else{
-    document.getElementById('overlay').classList.remove('overlayActive')
-    document.getElementById('menuOverlay').classList.remove('mmOverlayWdith')
-    // setTimeout(function(){
-      document.getElementById('overlay').classList.add('hidden')
+    setTimeout(function(){
+    // document.getElementById('overlay').classList.remove('overlayActive')
+    // document.getElementById('menuOverlay').classList.remove('mmOverlayWdith')
+      // document.getElementById('overlay').classList.add('hidden')
+      document.getElementById('menuOverlay').classList.add('hidden')
       document.querySelector('.navList').classList.add('hidden')
-    // },900)
+    },150)
     
   }
 })
