@@ -197,9 +197,9 @@ document.querySelector(".homeBtn").addEventListener("click", function(){
   document.querySelector(".home").classList.remove("hidden");
   document.querySelector(".about").classList.add("hidden");
   document.querySelector(".navList").classList.add("hidden");
-  document.getElementById('overlay').classList.remove('overlayActive')
-  document.getElementById('menuOverlay').classList.remove('mmOverlayWdith')
-  document.getElementById('overlay').classList.add('hidden')
+  // document.getElementById('overlay').classList.remove('overlayActive')
+  document.getElementById('menuOverlay').classList.add('hidden')
+  // document.getElementById('overlay').classList.add('hidden')
   document.getElementById('menuToggle').checked = false;
 });
 
@@ -209,9 +209,9 @@ document.querySelector(".aboutBtn").addEventListener("click", function(){
   document.querySelector(".home").classList.add("hidden");
   document.querySelector(".about").classList.remove("hidden");
   document.querySelector(".navList").classList.add("hidden");
-  document.getElementById('overlay').classList.remove('overlayActive')
-  document.getElementById('menuOverlay').classList.remove('mmOverlayWdith')
-  document.getElementById('overlay').classList.add('hidden')
+  // document.getElementById('overlay').classList.remove('overlayActive')
+  document.getElementById('menuOverlay').classList.add('hidden')
+  // document.getElementById('overlay').classList.add('hidden')
   document.getElementById('menuToggle').checked = false;
 });
 
