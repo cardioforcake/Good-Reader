@@ -223,7 +223,7 @@ main {
 
 .purchaseModalD{
   z-index: 8;
-  width: 35vw;
+  width: 30vw;
   height: 86vh;
   display: none;
   background-color: #71968A;
@@ -314,6 +314,27 @@ hr{
   margin-top: 3%;
   padding-top: 0.75%;
   padding-bottom: 0.75%;
+}
+.purchaseBtnS{ 
+  font-family: 'Space Mono', monospace;
+  color: black;
+  font-size: 2vh;
+  font-weight: 600;
+  width: 28%;
+  margin-top: 3%;
+  padding-top: 1.5%;
+  padding-bottom: 1.5%;
+}
+
+.purchaseBtnL{
+  font-family: 'Space Mono', monospace;
+  color: black;
+  font-size: 2vh;
+  font-weight: 600;
+  width: 48%;
+  margin-top: 3%;
+  padding-top: 1.5%;
+  padding-bottom: 1.5%;
 }
 
 .home {
@@ -587,6 +608,8 @@ hr{
     justify-content: flex-end;
     align-items: center;
     flex-direction: column;
+    /* padding-top: 1rem; */
+    padding-bottom: 1rem;
   }
 
   .purchaseLinks{
