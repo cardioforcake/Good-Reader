@@ -278,7 +278,7 @@ main {
 }
 
 .coverContainerD{
-  height: 50%;
+  height: 70%;
   width: 80%;
   /* padding-top: 10%; */
 }
@@ -617,16 +617,6 @@ hr{
     box-shadow: none;
   }
 
-  
-  #cover{
-    height: 90%
-  }
-
-  /* .coverContainer{
-    height: 70%;
-    padding-top: 0;
-  }
-
   .purchaseDesc{
     height: 13%;
   }
@@ -640,11 +630,10 @@ hr{
     justify-content: flex-end;
     align-items: center;
     flex-direction: column;
-    /* padding-top: 1rem; */
-    /* padding-bottom: 1rem;
-  } */
+    padding-bottom: 1rem;
+  }
 
-  /* .purchaseLinks{
+  .purchaseLinks{
     flex-direction: row;
     height: 8%;
     margin-bottom: 7%;
@@ -652,5 +641,5 @@ hr{
 
   .purchaseBtn{
     width: 8vw;
-  } */
+  }
 }
