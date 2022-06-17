@@ -246,7 +246,7 @@ main {
 
 .closeModalM{
   position: absolute;
-  height: 7%;
+  height: 6%;
   /* width: 5vw; */
   top: 1%;
   right: 2%;
@@ -310,31 +310,37 @@ hr{
   color: black;
   font-size: 2.5vh;
   font-weight: 600;
-  width: 50%;
+  width: 75%;
   margin-top: 3%;
   padding-top: 0.75%;
   padding-bottom: 0.75%;
+  border-radius: 0;
+  border-width: 1px;
 }
 .purchaseBtnS{ 
   font-family: 'Space Mono', monospace;
   color: black;
-  font-size: 2vh;
+  font-size: 2.2vh;
   font-weight: 600;
-  width: 28%;
+  width: 30%;
   margin-top: 3%;
-  padding-top: 1.5%;
-  padding-bottom: 1.5%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  border-radius: 0;
+  border-width: 1px;
 }
 
 .purchaseBtnL{
   font-family: 'Space Mono', monospace;
   color: black;
-  font-size: 2vh;
+  font-size: 2.2vh;
   font-weight: 600;
-  width: 48%;
+  width: 50%;
   margin-top: 3%;
-  padding-top: 1.5%;
-  padding-bottom: 1.5%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  border-radius: 0;
+  border-width: 1px;
 }
 
 .home {
