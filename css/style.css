@@ -271,14 +271,20 @@ main {
   background-color: rgb(0, 0, 0,0.5);
 }
 
-.coverContainer{
+.coverContainerM{
+  height: 50%;
+  width: 80%;
+  margin-top: 5%;
+}
+
+.coverContainerD{
   height: 50%;
   width: 80%;
   /* padding-top: 10%; */
 }
 
 #coverM{
-  height: 80%;
+  height: 85%;
 }
 
 #coverD{
@@ -615,7 +621,7 @@ hr{
     height: 90%
   }
 
-  .coverContainer{
+  /* .coverContainer{
     height: 70%;
     padding-top: 0;
   }
@@ -634,10 +640,10 @@ hr{
     align-items: center;
     flex-direction: column;
     /* padding-top: 1rem; */
-    padding-bottom: 1rem;
-  }
+    /* padding-bottom: 1rem;
+  } */
 
-  .purchaseLinks{
+  /* .purchaseLinks{
     flex-direction: row;
     height: 8%;
     margin-bottom: 7%;
@@ -645,5 +651,5 @@ hr{
 
   .purchaseBtn{
     width: 8vw;
-  }
+  } */
 }
