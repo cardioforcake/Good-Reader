@@ -176,7 +176,7 @@ input[type="checkbox"]{
 
 input[type="checkbox"]:checked ~.burgermenu:before {
   transform: translateY(12px) translateX(-1px) rotate(135deg);
-  width: 34.5px;
+  width: 35px;
 }
 input[type="checkbox"]:checked ~.burgermenu:after {
   transform: translateY(-12px) rotate(-135deg);
