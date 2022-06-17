@@ -242,7 +242,7 @@ main {
   position: relative;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: flex-start;
   align-items: center;
   font-family: 'Space Mono', monospace;
 }
@@ -277,8 +277,12 @@ main {
   /* padding-top: 10%; */
 }
 
-#cover{
-  height: 70%
+#coverM{
+  height: 80%;
+}
+
+#coverD{
+  height: 90%
 }
 
 .purchaseDesc{
